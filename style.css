@@ -17,7 +17,8 @@
 body {
     background-color: #000000;
     font-family: 'Futura';
-
+    overflow: hidden;
+    max-height: 100dvh;
 }
 
 .wrapper {
@@ -26,7 +27,7 @@ body {
 
 .main {
     background: #000;
-    width: 200%;
+    width: 100%;
 }
 
 .main .logo {
@@ -63,7 +64,7 @@ body {
     }
 
     .main .logo img {
-        width: 80px;
+        width: 70px;
 
     }
 }
@@ -77,14 +78,20 @@ body {
     flex-direction: column;
 }
 
+@media (max-width:1024px) {
+    .main .main_content {
+        position: relative;
+    }
+}
+
 .main .main_content_left {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 25px;
     position: relative;
     z-index: 22;
     width: 100%;
-
+    height: 100dvh;
 }
 
 .kungfu_person {
@@ -139,17 +146,23 @@ body {
     padding-left: 109px;
     z-index: 23;
     position: relative;
-    padding-top: 190px;
+    padding-top: 40px;
 }
 
 @media (max-width:1024px) {
+    .main .main_content_left {
+        gap: 40px;
+    }
+
     .main .main_content_left h1 {
-        padding: 90px 0 0 40px;
+        padding: 0px 0 0 40px;
         font-size: 48px;
     }
 }
 
 @media (max-width:768px) {
+
+
     .main .main_content_left h1 {
         padding-left: 20px;
     }
@@ -157,16 +170,38 @@ body {
 
 @media (max-width:556px) {
     .main .main_content_left h1 {
-        padding: 40px 0 0 20px;
+        padding: 0px 0 0 20px;
         font-size: 38px;
+    }
+
+    .main .main_content_left {
+        gap: 20px;
     }
 }
 
+@media (max-width:390px) {
+    .main .main_content_left h1 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width:360px) {
+    .main .main_content_left h1 {
+        font-size: 24px;
+    }
+}
 
 .main .main_content_right {
     position: absolute;
     right: 0;
+    max-height: 100%;
 
+}
+
+@media (max-width:1024px) {
+    .main .main_content_right {
+        height: 100%;
+    }
 }
 
 
@@ -234,6 +269,12 @@ body {
     z-index: 23;
 }
 
+@media (max-width:1400px) {
+    .main .main_content_right p {
+        bottom: 40px;
+    }
+}
+
 @media (max-width:1024px) {
     .main .main_content_right p {
         text-align: left;
@@ -241,7 +282,7 @@ body {
         padding-left: 40px;
         padding-right: 20px;
         left: 0;
-        bottom: 20px;
+        bottom: 50px;
     }
 }
 
@@ -273,6 +314,11 @@ body {
     }
 }
 
+@media (max-width:360px) {
+    .main .main_content_right p {
+        font-size: 12px;
+    }
+}
 
 .main .select {
     background: #131313;
@@ -280,7 +326,7 @@ body {
     max-width: 105px;
     color: #fff;
     margin-left: 106px;
-    margin-top: 279px;
+    margin-top: 20px;
     cursor: pointer;
     margin-bottom: 109px;
 }
