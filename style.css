@@ -1,0 +1,376 @@
+@font-face {
+    font-family: 'Futura';
+    src: url(./futuramdbtrusbyme_medium.otf);
+}
+
+@font-face {
+    font-family: 'Arial';
+    src: url(./arialmt.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    font-family: 'Futura';
+
+}
+
+.wrapper {
+    overflow: hidden;
+}
+
+.main {
+    background: #000;
+    width: 200%;
+}
+
+.main .logo {
+    padding: 109px 0 0 109px;
+}
+
+@media (max-width:1024px) {
+    .main .logo {
+        padding: 40px 0 0 40px;
+    }
+}
+
+@media (max-width:768px) {
+    .main .logo {
+        padding: 40px 0 0 20px;
+    }
+}
+
+@media (max-width:660px) {
+    .main .logo img {
+        width: 90px;
+    }
+}
+
+@media (max-width:480px) {
+    .main .logo img {
+        width: 60px;
+    }
+}
+
+@media (max-width:390px) {
+    .main .logo {
+        padding-top: 20px;
+    }
+
+    .main .logo img {
+        width: 80px;
+
+    }
+}
+
+
+.main .main_content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.main .main_content_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    z-index: 22;
+    width: 100%;
+
+}
+
+.kungfu_person {
+    animation: animat 3.5s infinite alternate ease-in-out;
+    transition: all .2s linear;
+
+
+}
+
+@media (max-width:1024px) {
+    .kungfu_person {
+        width: 100%;
+    }
+}
+
+@media (max-width:992px) {
+    .kungfu_person {
+        width: 120%;
+        left: -14%;
+    }
+}
+
+@media (max-width:768px) {
+    .kungfu_person {
+        width: 122%;
+        left: -22%;
+    }
+}
+
+
+@keyframes animat {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.main .main_content_left h1 {
+    font-weight: 400;
+    font-style: Medium;
+    font-size: 74px;
+    line-height: 89%;
+    letter-spacing: 0%;
+    color: #fff;
+    padding-left: 109px;
+    z-index: 23;
+    position: relative;
+    padding-top: 190px;
+}
+
+@media (max-width:1024px) {
+    .main .main_content_left h1 {
+        padding: 90px 0 0 40px;
+        font-size: 48px;
+    }
+}
+
+@media (max-width:768px) {
+    .main .main_content_left h1 {
+        padding-left: 20px;
+    }
+}
+
+@media (max-width:556px) {
+    .main .main_content_left h1 {
+        padding: 40px 0 0 20px;
+        font-size: 38px;
+    }
+}
+
+
+.main .main_content_right {
+    position: absolute;
+    right: 0;
+
+}
+
+
+@media (max-width:460px) {
+    .main .main_content_right {
+        position: absolute;
+        right: 0;
+        top: 30px;
+    }
+}
+
+@media (max-width:360px) {
+    .main .main_content_right {
+        top: 45px;
+    }
+}
+
+.main .main_content_right img:first-child {
+    position: absolute;
+    animation: animats 2.9s infinite alternate ease-in-out;
+    transition: all .2s linear;
+    opacity: 0;
+
+}
+
+@media (max-width:1024px) {
+    .main .main_content_right img:first-child {
+        width: 100%;
+    }
+}
+
+@keyframes animats {
+    0% {
+        transform: translateY(0);
+        opacity: .7;
+    }
+
+    50% {
+        transform: translateY(-20px);
+        opacity: .8;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.main .main_content_right img {
+    position: relative;
+    z-index: 2;
+}
+
+.main .main_content_right p {
+    font-family: 'Arial';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 89%;
+    letter-spacing: 0%;
+    text-align: right;
+    color: #FFFFFF;
+    position: absolute;
+    bottom: 108px;
+    right: 109px;
+    z-index: 23;
+}
+
+@media (max-width:1024px) {
+    .main .main_content_right p {
+        text-align: left;
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 20px;
+        left: 0;
+        bottom: 20px;
+    }
+}
+
+
+@media (max-width:768px) {
+    .main .main_content_right p {
+        font-size: 15px;
+        padding-left: 20px;
+        padding-right: 40px;
+        line-height: normal;
+        position: static;
+
+    }
+
+    .main .main_content_right p br {
+        display: none;
+    }
+}
+
+@media (max-width:660px) {
+    .main .main_content_right p {
+        position: static;
+    }
+}
+
+@media (max-width:420px) {
+    .main .main_content_right p {
+        font-size: 14px;
+    }
+}
+
+
+.main .select {
+    background: #131313;
+    padding: 19px 30px 20px 23px;
+    max-width: 105px;
+    color: #fff;
+    margin-left: 106px;
+    margin-top: 279px;
+    cursor: pointer;
+    margin-bottom: 109px;
+}
+
+@media (max-width:1024px) {
+    .main .select {
+        margin-bottom: 90px;
+        margin-top: 90px;
+        margin-left: 40px;
+    }
+}
+
+@media (max-width:768px) {
+    .main .select {
+        margin-bottom: 90px;
+        margin-top: 40px;
+        margin-left: 20px;
+    }
+}
+
+@media (max-width:680px) {
+    .main .select {
+        margin-bottom: 90px;
+        margin-top: 40px;
+        margin-left: 20px;
+        padding: 14px;
+    }
+}
+
+@media (max-width:420px) {
+    .main .select {
+        width: fit-content;
+    }
+}
+
+.main .select .select_top {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-family: 'Arial';
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+@media (max-width:460px) {
+    .main .select .select_top {
+        font-size: 28px;
+    }
+}
+
+@media (max-width:420px) {
+    .main .select .select_top {
+        font-size: 18px;
+    }
+}
+
+
+.main .select {
+    position: relative;
+}
+
+.main .select .select_options {
+    position: absolute;
+    width: 105px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    background: #131313;
+    margin-left: -23px;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: all .2s linear;
+    opacity: 0;
+}
+
+.select.active .select_top img {
+    transform: rotate(180deg);
+}
+
+.select.active .select_options {
+    height: max-content;
+    opacity: 1;
+}
+
+.select a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+    padding-left: 20px;
+}
